@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vignesh skin clinic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* body {
+            font-family: "Poppins", sans-serif;
+            background-color: #ffe6f2;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        } */
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #f3d4d9 0%, #fccce4 100%);
+            border-radius: 15px;
+            padding: 25px;
+            color: #605e60;
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card::before,
+        .card::after {
+            content: "";
+            position: absolute;
+            background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/14/flowers-1295671_1280.png');
+            background-size: cover;
+            opacity: 0.15;
+            width: 150px;
+            height: 150px;
+        }
+        
+        .card::before {
+            top: -20px;
+            right: -20px;
+            transform: rotate(20deg);
+        }
+        
+        .card::after {
+            bottom: -20px;
+            left: -20px;
+            transform: rotate(-15deg);
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(255, 105, 180, 0.4);
+        }
+        
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            z-index: 2;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="container-fluid topbar d-none d-lg-block">
+            <div class="container px-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="me-4 text-light"><i class="fas fa-map-marker-alt text-light me-2"></i>79, Lenin street, Kuyavarpalayam , Pondichéry, India, Puducherry</a>
+                            <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-light me-2"></i>075982 94761</a>
+                            <a href="#" class="text-light"><i class="fas fa-envelope text-light me-2"></i>rangaraj06@gmail.com</a>
+                        </div>
+
+                    </div>
+                    <!-- <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" class="me-3 btn-square border rounded-circle nav-fill" style="color: rgb(250, 212, 246);"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-3 btn-square border rounded-circle nav-fill" style="color: rgb(250, 212, 246);"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-3 btn-square border rounded-circle nav-fill" style="color: rgb(250, 212, 246);"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn-square border rounded-circle nav-fill" style="color: rgb(250, 212, 246);"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <!-- <h1 class="text-primary display-4">Sparlex</h1> -->
+                        <img src="img/home/v-logo-1.png" alt="">
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                    <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto border-top">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About Us</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Treatments</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="chemical.html" class="dropdown-item">CHEMICAL PEELING</a>
+                                    <a href="hairfal.html" class="dropdown-item">HAIR FALL TREATMENT</a>
+                                    <a href="wartremoval.html" class="dropdown-item">WART REMOVAL TREATMENT</a>
+                                    <a href="moleremoval.html" class="dropdown-item">MOLE REMOVAL TREATMENT</a>
+                                    <a href="prp.html" class="dropdown-item">PRP TREATMENT</a>
+                                    <a href="laserhair.html" class="dropdown-item">LASER HAIR REMOVAL</a>
+                                    <a href="botox.html" class="dropdown-item">BOTOX TREATMENT</a>
+                                    <a href="nonsurgical.html" class="dropdown-item">NON SURGICAL FACE LIFT</a>
+                                    <a href="antiaging.html" class="dropdown-item">ANTI AGING TREATMENT</a>
+                                    <a href="acnescar.html" class="dropdown-item">ACNE SCAR CORRECTION</a>
+                                    <a href="skintoning.html" class="dropdown-item">SKIN TONING</a>
+                                    <a href="pigmentation.html" class="dropdown-item">PIGMENTATION TREATMENT</a>
+                                    <a href="stretchmark.html" class="dropdown-item">STRETCH MARK TREATMENT</a>
+                                    <a href="vitiligo.html" class="dropdown-item">VITILIGO TREATMENT</a>
+                                    <a href="skininfection.html" class="dropdown-item">SKIN INFECTION TREATMENT</a>
+                                    <a href="skinallergy.html" class="dropdown-item">SKIN ALLERGY</a>
+                                    <a href="dermato.html" class="dropdown-item">DERMATO SURGICAL PROCEDURE</a>
+                                    <a href="raadio.html" class="dropdown-item">RADIO FREQUENCY ABLATION</a>
+                                    <a href="unwnted.html" class="dropdown-item">UNWANTED BODY HAIR REMOVAL</a>
+                                    <a href="acne.html" class="dropdown-item">ACNE TREATMENT</a>
+                                </div>
+                            </div>
+                            <a href="dermatology.html" class="nav-item nav-link">Dermatology</a>
+                            <a href="haircare.html" class="nav-item nav-link active">Hair Care Treatment</a>
+
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                            <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb py-5" style="background-image: url('img/service/banner21.jpg');">
+        <div class="container text-center py-5">
+            <h3 class="text-white display-3 mb-4">Hair Care Treatment</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-white">Hair Care Treatment</li>
+                </ol>
+        </div>
+    </div><br><br>
+    <!-- Header End -->
+
+    <center>
+        <div class="container-fluid">
+            <h3 style="text-align: center; color: rgb(105, 170, 244);">Best Hair Treatment In Pondicherry</h3><br>
+            <p>Say goodbye to your hair fall woes with help of Vignesh Skin & Hair Clinic. We provide quality hair treatment<br> that reduce hair problems and boost hair growth & health.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3 style="color: rgb(109, 174, 249);">Understanding Hair Loss</h3>
+                    <p> Managing hair loss is something a lot of us struggle with. With no dearth of information out in the world, we try all sorts of home remedies from extreme diets to various medications and shampoos. All these leave us more puzzled than
+                        when we originally began. Opting for hair loss treatment from the specialized hair clinic helps you cut through da the noise. Also it promotes hair regrowth in the best possible way. </p>
+                </div>
+                <div class="card">
+                    <h3 style="color: rgb(105, 169, 243);">Causes Of Hair Loss</h3>
+                    <p> Hair loss occurs due to various reasons, it depends on individual factors, environmental, dietary and much more. A few of the predominant causes of hair fall are: Family history (heredity) The most common cause of hair loss is a hereditary
+                        condition that happens with aging. This condition is called androgenic alopecia, male-pattern baldness and female-pattern baldness.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: rgb(109, 174, 249);">Medications and supplements</h3>
+                    <p>Hair loss can be a side effect of certain drugs, such as those used for cancer, arthritis, depression, heart problems, gout and high blood pressure. Radiation therapy to the head The hair may not grow back the same as it was before.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: rgb(109, 174, 249);">A very stressful event</h3>
+                    <p>Many people experience a general thinning of hair several months after a physical or emotional shock. This type of hair loss is temporary.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: rgb(109, 174, 249);">Hairstyles and treatments</h3>
+                    <p>Excessive hairstyling or hairstyles that pull your hair tight, such as pigtails or cornrows, can cause a type of hair loss called traction alopecia. Hot-oil hair treatments and permanents also can cause hair to fall out. If scarring
+                        occurs, hair loss could be permanent.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: rgb(109, 174, 249);">Hair Treatment We Provide</h3>
+                    <p>Anti Hair Loss treatment -Medical Therapy, Anti Hair Loss treatment -GFC (Growth Factor Concentrate), Hair Transplant, PRP (Platelet-Rich Plasma), FUT (Follicular Unit Transplant)</p>
+                </div>
+            </div>
+        </div><br><br>
+    </center>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4 text-white">Newsletter</h4>
+                        <p class="text-white">Vignesh skin clinic, with the simple motto “ BETTER SKIN! BETTER YOU ” offers a full array of specialized care in both Medical Dermatology and Cosmetic Dermatology.</p>
+                        <div class="position-relative mx-auto rounded-pill">
+                            <input class="form-control rounded-pill border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary btn-primary-outline-0 rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Our Services</h4>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Chemical Peeling</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Hair Fall Treatment</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Wart/Mole Removal</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> IV Glutathione</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Skin Toning</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Laser Skin Treatment</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> PRP/GFC Treatment</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Botox Treatment</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Schedule</h4>
+                        <p class="text-muted mb-0">Monday: <span class="text-white"> 10 am–1 pm, 6–9:30 pm</span></p>
+                        <p class="text-muted mb-0">Saturday: <span class="text-white"> 10 am–1 pm, 6–9:30 pm</span></p>
+                        <p class="text-muted mb-0">Sunday: <span class="text-white"> Closed</span></p>
+                        <h4 class="my-4 text-white">Address</h4>
+                        <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 79, Lenin street, Kuyavarpalayam , Pondichéry, India, Puducherry</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Follow Us</h4>
+                        <a href="https://www.facebook.com/p/Dr-Rangaraj-s-Vignesh-skin-and-hair-clinic-100063543792602/"><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
+                        <h4 class="my-4 text-white">Contact Us</h4>
+                        <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> rangaraj06@gmail.com</p>
+                        <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> 075982 94761</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>GetIt Media</a>, All right reserved.</span>
+                </div>
+                <!-- <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2" style="color: rgb(248, 198, 243);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2" style="color: rgb(250, 212, 246);"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2" style="color: rgb(250, 212, 246);"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0" style="color: rgb(250, 212, 246);"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-4 text-center text-md-end text-white"> -->
+                <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                <!-- Designed By <a class="border-bottom" href="https://www.getitmediasolutions.com/">GetIt Media</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
